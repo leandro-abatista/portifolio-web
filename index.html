@@ -34,7 +34,9 @@
             <div class="banner">
                 <h1>Web Developer Fullstack</h1>
                 <p>Leandro Amorim</p>
-                <button>Saiba mais</button>
+                <a href="https://www.dropbox.com/s/r703pnyt7hl20o6/Leandro%20Amorim%20Batista%20novo.pdf?dl=0">
+                    <i class="fab fa-download"></i>Baixar
+                    Currículo</a>
             </div>
         </header>
 
@@ -43,7 +45,7 @@
             <nav>
                 <ul class="menu">
                     <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Conhecimento</a></li>
+                    <li class="menu-item"><a href="#Conhecimento" class="menu-link">Conhecimento</a></li>
                     <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
                     <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
                     <li class="menu-item"><a href="#" class="menu-link">Orçamento</a></li>
@@ -184,7 +186,7 @@
                         <h2>Todo a Lista</h2>
                         <h3>JavaScript</h3>
                         <p>Breve descrição de todo o projeto desenvolvido.</p>
-                        <button>Saiba Mais</button>
+                        <button class="btn">Saiba Mais</button>
                     </div>
                 </div>
 
@@ -196,7 +198,7 @@
                         <h2>Toda a Lista</h2>
                         <h3>JSF</h3>
                         <p>Breve descrição de todo o projeto desenvolvido.</p>
-                        <button>Saiba Mais</button>
+                        <button class="btn">Saiba Mais</button>
                     </div>
                 </div>
 
@@ -208,15 +210,74 @@
                         <h2>Toda a Lista</h2>
                         <h3>Spring Boot</h3>
                         <p>Breve descrição de todo o projeto desenvolvido.</p>
-                        <button>Saiba Mais</button>
+                        <button class="btn">Saiba Mais</button>
                     </div>
                 </div>
 
             </div>
         </section>
 
-    </div>
+        <section class="sessao-contato">
+            <div class="contato-wrapper">
+                <div class="contato-left">
 
+                </div>
+
+                <div class="contato-right">
+                    <h1>Contato</h1>
+                    <form>
+                        <div class="input-group">
+                            <input id="nome" type="text" class="field">
+                            <label for="nome" class="field-label">Nome</label>
+                        </div>
+                        <div class="input-group">
+                            <input id="email" type="text" class="field">
+                            <label for="email" class="field-label">E-mail</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea id="mensagem" class="field"></textarea>
+                            <label for="mensagem" class="field-label">Mensagem</lable>
+                        </div>
+
+                        <button type="submit" class="btn btn-submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!--bloco de orçamento-->
+        <section class="sessao-orcamento">
+            <div class="orcamento-wrapper">
+                <h1>Faça um orçamento</h1>
+
+                <form action="#">
+                    <label for="qtde">Quantidade</label>
+                    <input type="number" min="1" name="qtde" id="qtde">
+                    <label for="js">Preciso de um script JS</label>
+                    <input type="checkbox" name="js" id="js">
+                    <label>Layout</label>
+                    <div class="group-layout">
+                        <div>
+                            <input type="radio" name="layout" id="layout-sim">
+                            <label for="layout-sim">Preciso de um Layout</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="layout" id="layout-nao">
+                            <label for="layout-nao">Já tenho um Layout</label>
+                        </div>
+                    </div>
+
+                    <label for="prazo">Prazo</label>
+                    <input type="range" name="prazo" id="prazo">
+                    <button class="btn btn-orcamento" type="submit">Enviar</button>
+
+                </form>
+            </div>
+        </section>
+
+
+    </div>
 </body>
 
 <script src="script.js"></script>
