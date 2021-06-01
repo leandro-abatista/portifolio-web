@@ -41,7 +41,7 @@ body {
     height: .1rem;
     background-color: #fff;
     box-shadow: 0.1rem 0.1rem 3px #000;
-    transition: transform 2s;
+    transition: transform 1s;
 }
 
 .show-menu #line1 {
@@ -187,7 +187,7 @@ header {
     z-index: 80;
 }
 
-.sidebar .show-menu {
+.show-menu .sidebar {
     right: 0;
 }
 
@@ -232,7 +232,7 @@ header {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    transition: background-color 1;
+    transition: background-color 1s;
 }
 
 .social-media i:hover {
@@ -422,3 +422,5 @@ header {
     opacity: 1;
     visibility: visible;
 }
+
+/*css do formulário de contato*/
