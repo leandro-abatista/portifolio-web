@@ -13,6 +13,10 @@
     --font-action: "Muli", serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     /*garante que o tamanho padrão seja 16px*/
     font-size: 16px;
@@ -588,4 +592,53 @@ header {
     cursor: pointer;
     grid-column: 2;
     width: 25rem;
+}
+
+footer {
+    width: 100%;
+    height: 10rem;
+    background-color: #171717;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content p {
+    font-family: var(--font-secundary);
+    color: #a7a7a7;
+    font-size: 1.2rem;
+}
+
+.social-list a {
+    margin: 0 2rem;
+    color: #a7a7a7;
+    font-size: 1.5rem;
+}
+
+.social-list ul {
+    display: flex;
+}
+
+#link-topo {
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    background: #8E2DE2;
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 .1rem .6rem #00000099;
 }
